@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-image:url("backgroundimage.png");
+        background-size:cover;
+        width: 100vw;
+        height: 100vh;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .center{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:column;
+    }
+        
+        i{
+            color: black;
+            font-size: 20px;
+            margin: 0px 5px;
+        }
+        .inp-grp{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color:white;
+            border-radius: 50px;
+            width: 75%;
+              padding: 0.5%;
+              margin-bottom: 40px;
+        }
+        .text-field{
+            font-size: 15px;
+            outline: none;
+            border:none;
+            padding: 6px;
+            width: 400px;
+        }
+        .fav-card{
+            width: 100px;
+            height: 100px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .fav-card:hover{
+            background-color: rgba(250, 235, 215, 0.329);
+            .dot{
+                opacity: 1;
+            }
+        }
+        .circle{
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .insta{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .fav-list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       .img{
+        width: 40%;
+        margin-bottom: 50px;
+       }
+       .dot{
+        font-size: 20px;
+          position: relative;
+          left: 40px;
+          opacity: 0;
+          color: white;
+          transition: 0.4s all ease;
+       }
+       .topright{
+        width: 200px;
+        height:50px;
+        position: fixed;
+        top: 9px;
+        right: 9px;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        color: white;
+       }
+       .dots{
+        display:flex;
+
+       }
+       .gif{
+        width:40px;
+        border-radius: 50%;
+       }
+       .grid{
+        width: 0px;
+        color: white;
+       }
+</style>
+<body>
+    <div class="container">
+        <div class="center"> 
+            <img src="google.png" alt="" class="img">
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            <form actions="">
+                <input type="text" class="text-field" placeholder="Search Google or type a URL">
+                
+
+            </form>
+            <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+
+            </div>
+            <div class="fav-list">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="youtube.png" class="insta" alt="">
+                    </div>
+                    <p>Youtube</p>
+    
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="chatgpt.png" class="insta" alt="">
+                    </div>
+                    <p>Chatgpt</p>
+    
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="hotstar.png" class="insta" alt="">
+                    </div>
+                    <p>Hotstar</p>
+    
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="gmail.png" class="insta" alt="">
+                    </div>
+                    <p>Gmail</p>
+    
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+    </div>
+    <div class="topright">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="dots">
+            <i class="fa-solid fa-ellipsis-vertical grid "></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        </div>
+          <img src="nature.png" class="gif">
+    </div>
+   
+    
+</body>
+</html>
